@@ -1,0 +1,43 @@
+WORD COUNTER
+
+PSEUDO
+
+# make a list of words
+
+
+accept file
+Remove white space and punctuation from file
+Split words to come with a list of words
+return list
+
+
+
+# count the words
+
+Take the list
+find the length of list
+print length
+
+
+
+# top 10 words
+import counter class from collection module
+pass the list to instance of Counter
+call most common function on Counter instance pass '10' as argument
+return most occurred word
+
+------------------------------------------------------------------------------
+
+FESTIVAL NAMES
+
+PSEUDO
+
+accept file
+create container
+insert each line into own array
+insert array to the container
+result container with arrays
+created matched_container
+loop thru the container comparing each array to the next
+if matching string found greater  than 1 array insert it to matched container with only matched strings as items
+only return unique events from matched_container
