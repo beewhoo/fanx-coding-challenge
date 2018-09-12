@@ -1,4 +1,3 @@
-# fanx-coding-challenge
 
 # Word Counter
 
