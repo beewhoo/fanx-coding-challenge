@@ -1,7 +1,7 @@
 
 # Word Counter
 
-Program accepts <file_name.txt> on command line (optional). If none provided run 'data.txt' from the repo instead
+Program accepts <file_name.txt> on command line (optional). If none provided program will run 'input.txt' from this repo.
 
 ## Getting Started
 
@@ -9,8 +9,28 @@ Program accepts <file_name.txt> on command line (optional). If none provided run
 python word_counter.py input.txt 
 ```
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Run test 
 
-### Prerequisites
+```
+python test_word_counter.py 
+```
 
-What things you need to install the software and how to install them
+
+
+# Festival names
+
+Program accepts <file_name.txt> on command line (optional). If none provided program will run 'data.txt' from this repo.
+
+## Getting Started
+
+```
+python festival_names.py data.txt
+```
+
+
+
+
+
+
+
+
