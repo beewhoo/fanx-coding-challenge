@@ -1,16 +1,36 @@
+''' Unique list without loosing order '''
 
-'''Parses file - takes the first word and see if it already exsits - if it does it store on a new list '''
+def unique_ordered(list):
+    seen = []
+    for f in list:
+        if f not in seen:
+            seen.append(f)
+    return seen
 
 
-def create_festival_list(text_file):
+
+''' Compares two lists - breaks when not matched - returns matched list or empty list'''
+
+def compare_lists(list1, list2):
+    match = []
+    smaller_line = min(len(list1),len(list2))
+    for i in range(0, smaller_line):
+      if list1[i] == list2[i]:
+          match.append(list1[i])
+      else:
+          break
+    return ' '.join(match)
+
+
+'''Opens file two lines at a time - splits two lines into two lists -calls compare lists and unique functions to return festival names'''
+
+def open_file(text_file):
     with open(text_file, 'r') as f:
-        seen = set()
-        events = set()
+        festivals = []
+        previous = next(f)
         for line in f:
-            line_lower = line.lower()
-            event = line_lower.split(' ')[0]
-            if event in seen:
-                events.add(event)
-            else:
-                seen.add(event)
-        return events
+            festival = compare_lists(previous.split(' '), line.split(' '))
+            previous = line
+            if festival != '':
+                festivals.append(festival)
+        return festivals
