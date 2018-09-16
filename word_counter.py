@@ -8,7 +8,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         text_file = sys.argv[1]
     else:
-        text_file = './tests/most_common_words.txt'
+        text_file = './data/input.txt'
     occuring_words = ten_most_common_words(text_file)
     word_count = word_count(text_file)
     print('-------------program starting---------------')
