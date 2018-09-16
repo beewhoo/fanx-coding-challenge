@@ -9,7 +9,7 @@ def unique_ordered(list):
 
 
 
-''' Compares two lists - breaks when not matched - returns matched list or empty list'''
+''' Compares two lists - breaks when not matched - returns matched list'''
 
 def compare_lists(list1, list2):
     match = []
@@ -22,7 +22,7 @@ def compare_lists(list1, list2):
     return ' '.join(match)
 
 
-'''Opens file two lines at a time - splits two lines into two lists -calls compare lists and unique functions to return festival names'''
+'''Opens file two lines at a time - splits two lines into two lists -calls compare lists functions - returns matched festivals list'''
 
 def open_file(text_file):
     with open(text_file, 'r') as f:
